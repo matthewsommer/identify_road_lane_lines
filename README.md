@@ -1,4 +1,4 @@
-# **Finding Lane Lines on the Road** 
+# Using OpenCV to Identify Lane Lines on Driving Input Video
 
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
