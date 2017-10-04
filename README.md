@@ -2,10 +2,9 @@
 
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
-
+The code in this repository is an example of using OpenCV to identify road lane lines from an input video captured 
+from the front view of a passenger vehicle driving down a highway. This is the first project as part of the Udacity nanodegree 
+program for self-driving vehicles.
 
 [//]: # (Image References)
 
@@ -16,7 +15,7 @@ The goals / steps of this project are the following:
 
 ---
 
-### Pipeline 
+### Pipeline Methods
 
 * Convert to grayscale
 * Apply guassian blur
@@ -26,10 +25,9 @@ The goals / steps of this project are the following:
 
 To draw lane lines on the left and right sides I first check to see if the slope is positive or negative then draw the two lines individually.
 
-![alt text][image1]
-![alt text][image2]
-![alt text][image3]
-![alt text][image4]
+| Grayscale | Guassian Blur | Edges | Weighted |
+|:-------------------:|:-------------------:|:-------------------:|:-------------------:|
+| ![alt text][image1] | ![alt text][image2] | ![alt text][image3] | ![alt text][image4] |
 
 ### Shortcomings with your current pipeline
 
