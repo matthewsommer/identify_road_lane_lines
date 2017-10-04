@@ -1,4 +1,4 @@
-# Using OpenCV to Identify Lane Lines on Driving Input Video
+# Identifying Lane Lines on Driving Input Video using OpenCV
 
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
@@ -16,11 +16,8 @@ The goals / steps of this project are the following:
 
 ---
 
-### Reflection
+### Pipeline 
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
-
-My pipeline 
 * Convert to grayscale
 * Apply guassian blur
 * Extract edges by using canny conversion
@@ -34,7 +31,7 @@ To draw lane lines on the left and right sides I first check to see if the slope
 ![alt text][image3]
 ![alt text][image4]
 
-### 2. Identify potential shortcomings with your current pipeline
+### Shortcomings with your current pipeline
 
 My current code doesn't work with the optional challenge which requires fitting a higher order polynominal to the lane lines.
 
@@ -43,7 +40,7 @@ I think my calculation for the lane lines could be smoother between frames.
 The frame sizes are hard-coded but can be extract using code. For this exercise I think it's reasonable to assume the frame size but in production
 code it would be better to extract and verify the frame size.
 
-### 3. Suggest possible improvements to your pipeline
+### Possible improvements to your pipeline
 
 I could improve this code by having the line drawing function take into account the frame before the current frame. By using information
 from the previous frame it should be possible to get a smoother line.
