@@ -13,7 +13,7 @@ from the front view of a passenger vehicle driving down a highway. This is the f
 
 # Getting Started
 
-1. [Install Miniconda] (https://conda.io/miniconda.html)
+1. [Install Miniconda](https://conda.io/miniconda.html)
 2. Create [environment provided by Udacity in this repository](https://github.com/udacity/CarND-Term1-Starter-Kit)
 3. Activate environment on command line with 'source activate carnd-term1' (you can list environments with 'conda env list')
 4. Start Jupyter with 'jupyter notebook notebook.ipynb'
@@ -29,7 +29,7 @@ The pipeline method used to determine lane lines has the following architecture:
 * Use only region of interest where lane lines are expected
 * Extract Hough lines from converted image
 
-To draw lane lines on the left and right sides I first check to see if the slope is positive or negative then draw the two lines individually.
+To draw lane lines on the left and right sides, first check to see if the slope is positive or negative then draw the two lines individually
 
 | Grayscale | Guassian Blur | Edges | Output |
 |:-------------------:|:-------------------:|:-------------------:|:-------------------:|
