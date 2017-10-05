@@ -11,18 +11,22 @@
 This code is an example of using [OpenCV](http://opencv.org/) to approximately identify road lane lines from an input video captured 
 from the front view of a passenger vehicle driving down a highway. This is the first project as part of the [Udacity Self-Driving Car Engineer Nanodegree](https://www.udacity.com/drive).
 
-# Key Tech
+# Getting Started
 
-* Python
-* Jupyter (Only used to execute the code for this project)
-* OpenCV
+1. [Install Miniconda] (https://conda.io/miniconda.html)
+2. Create [environment provided by Udacity in this repository](https://github.com/udacity/CarND-Term1-Starter-Kit)
+3. Activate environment on command line with 'source activate carnd-term1' (you can list environments with 'conda env list')
+4. Start Jupyter with 'jupyter notebook notebook.ipynb'
+5. Browse to URL http://localhost:8888/notebooks/notebook.ipynb
+6. Make sure correct kernal is being used by the Jupyter notebook (you'll get an error about 'No such file or directory' for a path such as '/Users/*/anaconda/envs/tensorflow/bin/python') if you don't see the correct kernal listed you have to update conda to list kernals in Jupyter
 
-### Pipeline Methods
+# Method Architecture
 
+The pipeline method used to determine lane lines has the following architecture:
 * Convert to grayscale
 * Apply guassian blur
 * Extract edges by using canny conversion
-* Use only region of interest where lane lines are expected to be
+* Use only region of interest where lane lines are expected
 * Extract Hough lines from converted image
 
 To draw lane lines on the left and right sides I first check to see if the slope is positive or negative then draw the two lines individually.
@@ -31,18 +35,9 @@ To draw lane lines on the left and right sides I first check to see if the slope
 |:-------------------:|:-------------------:|:-------------------:|:-------------------:|
 | ![Grayscale example][image1] | ![Guassian blur example][image2] | ![Edges example][image3] | ![Output example][image4] |
 
-### Shortcomings with Current Pipeline
+# Improvements Needed
 
-My current code doesn't work with the optional challenge which requires fitting a higher order polynominal to the lane lines.
-
-I think my calculation for the lane lines could be smoother between frames.
-
-The frame sizes are hard-coded but can be extract using code. For this exercise I think it's reasonable to assume the frame size but in production
+* Calculation of lane lines could be smoother between frames by accounting for the previous frame. I could improve this code by having the line drawing function take into account the frame before the current frame. By using information from the previous frame it should be possible to get a smoother line.
+* The frame sizes are hard-coded but can be extracted using code. For this exercise I think it's reasonable to assume the frame size but in production
 code it would be better to extract and verify the frame size.
-
-### Possible Improvements to Pipeline
-
-I could improve this code by having the line drawing function take into account the frame before the current frame. By using information
-from the previous frame it should be possible to get a smoother line.
-
-The code currently is filtering out light colors but I could get more precise by specificying specific line colors like yellow.
+* The code currently is filtering out light colors but I could get more precise by specificying specific line colors like yellow.
