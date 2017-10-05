@@ -1,9 +1,9 @@
 [//]: # (Image References)
 
-[image1]: ./test_images_output/grayscale/solidWhiteCurve.jpg "Grayscale"
-[image2]: ./test_images_output/edges/solidWhiteCurve.jpg "Edges"
-[image3]: ./test_images_output/region/solidWhiteCurve.jpg "Region"
-[image4]: ./test_images_output/weighted/solidWhiteCurve.jpg "weighted"
+[image1]: ./output/images/grayscale/solidWhiteCurve.jpg "Grayscale"
+[image2]: ./output/images/edges/solidWhiteCurve.jpg "Edges"
+[image3]: ./output/images/region/solidWhiteCurve.jpg "Region"
+[image4]: ./output/images/weighted/solidWhiteCurve.jpg "weighted"
 
 # Identifying Lane Lines on Driving Input Video using OpenCV
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
