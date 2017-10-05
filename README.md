@@ -1,10 +1,14 @@
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 # Identifying Lane Lines on Driving Input Video using OpenCV
 
-[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+This code is an example of using [OpenCV](http://opencv.org/) to approximately identify road lane lines from an input video captured 
+from the front view of a passenger vehicle driving down a highway. This is the first project as part of the [Udacity Self-Driving Car Engineer Nanodegree](https://www.udacity.com/drive).
 
-The code in this repository is an example of using OpenCV to identify road lane lines from an input video captured 
-from the front view of a passenger vehicle driving down a highway. This is the first project as part of the Udacity nanodegree 
-program for self-driving vehicles.
+# Key Tech
+
+* Python
+* Jupyter (Only used to execute the code for this project)
+* OpenCV
 
 [//]: # (Image References)
 
@@ -29,7 +33,7 @@ To draw lane lines on the left and right sides I first check to see if the slope
 |:-------------------:|:-------------------:|:-------------------:|:-------------------:|
 | ![alt text][image1] | ![alt text][image2] | ![alt text][image3] | ![alt text][image4] |
 
-### Shortcomings with your current pipeline
+### Shortcomings with Current Pipeline
 
 My current code doesn't work with the optional challenge which requires fitting a higher order polynominal to the lane lines.
 
@@ -38,7 +42,7 @@ I think my calculation for the lane lines could be smoother between frames.
 The frame sizes are hard-coded but can be extract using code. For this exercise I think it's reasonable to assume the frame size but in production
 code it would be better to extract and verify the frame size.
 
-### Possible improvements to your pipeline
+### Possible Improvements to Pipeline
 
 I could improve this code by having the line drawing function take into account the frame before the current frame. By using information
 from the previous frame it should be possible to get a smoother line.
