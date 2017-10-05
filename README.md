@@ -1,5 +1,12 @@
-[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+[//]: # (Image References)
+
+[image1]: ./test_images_output/grayscale/solidWhiteCurve.jpg "Grayscale"
+[image2]: ./test_images_output/edges/solidWhiteCurve.jpg "Edges"
+[image3]: ./test_images_output/region/solidWhiteCurve.jpg "Region"
+[image4]: ./test_images_output/weighted/solidWhiteCurve.jpg "weighted"
+
 # Identifying Lane Lines on Driving Input Video using OpenCV
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
 This code is an example of using [OpenCV](http://opencv.org/) to approximately identify road lane lines from an input video captured 
 from the front view of a passenger vehicle driving down a highway. This is the first project as part of the [Udacity Self-Driving Car Engineer Nanodegree](https://www.udacity.com/drive).
@@ -9,15 +16,6 @@ from the front view of a passenger vehicle driving down a highway. This is the f
 * Python
 * Jupyter (Only used to execute the code for this project)
 * OpenCV
-
-[//]: # (Image References)
-
-[image1]: ./test_images_output/grayscale/solidWhiteCurve.jpg "Grayscale"
-[image2]: ./test_images_output/edges/solidWhiteCurve.jpg "Edges"
-[image3]: ./test_images_output/region/solidWhiteCurve.jpg "Region"
-[image4]: ./test_images_output/weighted/solidWhiteCurve.jpg "weighted"
-
----
 
 ### Pipeline Methods
 
@@ -29,9 +27,9 @@ from the front view of a passenger vehicle driving down a highway. This is the f
 
 To draw lane lines on the left and right sides I first check to see if the slope is positive or negative then draw the two lines individually.
 
-| Grayscale | Guassian Blur | Edges | Weighted |
+| Grayscale | Guassian Blur | Edges | Output |
 |:-------------------:|:-------------------:|:-------------------:|:-------------------:|
-| ![alt text][image1] | ![alt text][image2] | ![alt text][image3] | ![alt text][image4] |
+| ![Grayscale example][image1] | ![Guassian blur example][image2] | ![Edges example][image3] | ![Output example][image4] |
 
 ### Shortcomings with Current Pipeline
 
